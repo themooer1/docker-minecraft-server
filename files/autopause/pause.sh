@@ -15,7 +15,7 @@ if [[ $( ps -a -o stat,comm | grep 'java' | awk '{ print $1 }') =~ ^S.*$ ]] ; th
     sleep 0.1
   done
 
-  # finally pause the process
-  logAutopauseAction "Pausing Java process"
-  killall -q -STOP java
+  # Stop the server
+  logAutopauseAction "Stopping Minecraft Server (No players connected in some time.)"
+  killall -TERM mc-server-runner
 fi
