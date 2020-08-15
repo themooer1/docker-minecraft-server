@@ -1,4 +1,5 @@
-FROM openjdk:8u212-jre-alpine
+#FROM openjdk:8u212-jre-alpine
+FROM openjdk:16-jdk-alpine3.12`
 
 LABEL org.opencontainers.image.authors="Geoff Bourne <itzgeoff@gmail.com>"
 
